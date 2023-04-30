@@ -1,0 +1,36 @@
+.footer-bottom {
+  background-color: rgb(163, 162, 162);
+  /* position: fixed; */
+  padding: 10px 160px;
+}
+.footer-bottom img {
+  margin: -80px 0px;
+  padding: 40px 0px;
+  width: 130px;
+}
+.footer_text {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.footer_text .second-text {
+  margin-top: -16px;
+}
+.facebook {
+  color: #3c65bd;
+  margin-right: 20px;
+  font-size: 28px;
+}
+.instagram {
+  color: #8b34c3;
+  margin-right: 20px;
+  font-size: 28px;
+}
+.whatsapp {
+  color: green;
+  margin-right: 20px;
+  font-size: 28px;
+}
+.twitter {
+  color: #1da1f2;
+  font-size: 28px;
+}

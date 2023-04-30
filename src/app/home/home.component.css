@@ -1,0 +1,60 @@
+#card {
+  border: none;
+}
+#card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.card-body p {
+  text-align: center;
+}
+.card {
+  border: none;
+}
+.card img {
+  width: 350px;
+}
+.carousel-item img {
+  width: 100vw;
+  height: 500px;
+}
+.navbar-brand img {
+  width: 100px;
+  height: 100px;
+}
+.carousel-caption h3 {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 180px;
+  color: rgb(84, 239, 187);
+}
+.carousel-caption button {
+  /* background-color: transparent; */
+  border: none;
+  /* margin-right: 400px; */
+  color: white;
+}
+.carousel-caption button:hover {
+  background-color: none;
+}
+.carousel-caption button i {
+  color: rgb(11, 225, 11);
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-right: -200px;
+}
+.carousel-caption button i:hover {
+  background-color: none;
+}
+.carousel-caption button i span {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+}
+.footer {
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}

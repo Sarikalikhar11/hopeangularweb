@@ -1,0 +1,474 @@
+<div class="container">
+  <div class="row">
+    <form action="" class="mb-5 d-flex flex-wrap" *ngIf="showForm">
+      <div class="col-md-8 left_section">
+        <p class="text-danger fw-normal text-end">( * ) show required field</p>
+        <div class="mb-3 d-flex flex-wrap">
+          <label for="">Type of donation<span>*</span></label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select how you would like to donate?</option>
+            <option (selectionchange)="toggleForm()" value="1" type="money">
+              Money
+            </option>
+            <option value="2" type="clothes">Clothes</option>
+            <option value="3" type="Foods">Foods</option>
+            <option value="3" type="Books">Books/Toys</option>
+          </select>
+        </div>
+        <div class="mb-3 select">
+          <label for="">Fullname<span>*</span></label>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="formGroupExampleInput"
+            placeholder="fullname"
+            formControlName="select_input"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="">Email<span>*</span></label>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="formGroupExampleInput"
+            placeholder="ex:- abc@gmail.com"
+            formControlName="select_input"
+          />
+        </div>
+        <div class="mb-3 d-flex flex-wrap">
+          <label for="">Contact No.<span>*</span></label>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="formGroupExampleInput"
+            placeholder="ex:- 9865******"
+            formControlName="select_input"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="">Facebook url<span>*</span></label>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="formGroupExampleInput"
+            placeholder="ex:- www.facebook.com/abc123"
+            formControlName="select_input"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="">Amount<span>*</span></label>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="formGroupExampleInput"
+            placeholder="ex:- 5000"
+            formControlName="select_input"
+          />
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea1"
+          ></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+        <div class="mt-3">
+          <input
+            type="Submit"
+            class="form-control bg-primary text-white"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+      </div>
+      <div class="col-md-4 payment_section">
+        <img
+          src="./../../assets/images/qr_code.png"
+          alt=""
+          class="d-block mx-auto mt-3"
+        />
+        <p class="text-center mt-3 fw-bolder">--- OR ---</p>
+        <div class="acc_details">
+          <p>Ac. No. <span class="text-end">1234567865433</span></p>
+          <p>IFSC Code<span>PUNB3202</span></p>
+          <p>Ac. Name<span>Hope Trust</span></p>
+        </div>
+      </div>
+    </form>
+    <div class="icon-btn">
+      <button
+        type="button"
+        class="btn btn-outline-success float-end d-flex flex-end"
+      >
+        <i class="fa-brands fa-whatsapp"><span>Join Us</span></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <form action="" class="mb-5 d-flex flex-wrap">
+      <div class="col-md-8 left_section">
+        <p class="text-danger fw-normal text-end">( * ) show required field</p>
+        <div class="mb-3 d-flex flex-wrap">
+          <label for="">Type of donation<span>*</span></label>
+          <select class="form-select" aria-label="Default select example">
+            <option>Select how you would like to donate?</option>
+            <option value="1" type="money" selected>Money</option>
+            <option value="2" type="clothes">Clothes</option>
+            <option value="3" type="Foods">Foods</option>
+            <option value="3" type="Books">Books/Toys</option>
+          </select>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="contact-input">
+            <label for="">Fullname<span>*</span></label>
+            <input
+              type="text"
+              class="form-control fullname_input"
+              id="formGroupExampleInput"
+              placeholder="Fullname"
+              formControlName="fullname"
+            />
+          </div>
+          <div class="contact-input">
+            <label for="">Email<span>*</span></label>
+            <input
+              type="text"
+              class="form-control email_input"
+              id="formGroupExampleInput"
+              placeholder="Email"
+              formControlName="email"
+            />
+          </div>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="contact-input">
+            <label for="">Contact No.<span>*</span></label>
+            <input
+              type="text"
+              class="form-control contact_input"
+              id="formGroupExampleInput"
+              placeholder="Contact no"
+              formControlName="contactno"
+            />
+          </div>
+          <div class="contact-input">
+            <label for="">Facebook Url<span>*</span></label>
+            <input
+              type="text"
+              class="form-control fb_input"
+              id="formGroupExampleInput"
+              placeholder="Facebookurl"
+              formControlName="facebookurl"
+            />
+          </div>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="item-input">
+            <label for="">Item<span>*</span></label>
+            <input
+              type="text"
+              class="form-control item_input"
+              id="formGroupExampleInput"
+              placeholder="Item1"
+              formControlName="item"
+            />
+          </div>
+          <div class="item-input">
+            <label for="">Qty<span>*</span></label>
+            <input
+              type="text"
+              class="form-control qty_input"
+              id="formGroupExampleInput"
+              placeholder="Qty"
+              formControlName="facebookurl"
+            />
+          </div>
+          <div class="item-input">
+            <input type="button" value="+" class="btn_input" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="">Location<span>*</span></label>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="formGroupExampleInput"
+            placeholder="ex:- Delhi"
+            formControlName="select_input"
+          />
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+          ></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+        <div class="mt-3">
+          <input
+            type="Submit"
+            class="form-control bg-primary text-white"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+      </div>
+    </form>
+    <div class="icon-btn">
+      <button
+        type="button"
+        class="btn btn-outline-success float-end d-flex flex-end"
+      >
+        <i class="fa-brands fa-whatsapp"><span>Join Us</span></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <form action="" class="mb-5 d-flex flex-wrap">
+      <div class="col-md-8 left_section">
+        <p class="text-danger fw-normal text-end">( * ) show required field</p>
+        <div class="mb-3 d-flex flex-wrap">
+          <label for="">Type of donation<span>*</span></label>
+          <select class="form-select" aria-label="Default select example">
+            <option>Select how you would like to donate?</option>
+            <option value="1" type="money" selected>Money</option>
+            <option value="2" type="clothes">Clothes</option>
+            <option value="3" type="Foods">Foods</option>
+            <option value="3" type="Books">Books/Toys</option>
+          </select>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="contact-input">
+            <label for="">Fullname<span>*</span></label>
+            <input
+              type="text"
+              class="form-control fullname_input"
+              id="formGroupExampleInput"
+              placeholder="Fullname"
+              formControlName="fullname"
+            />
+          </div>
+          <div class="contact-input">
+            <label for="">Email<span>*</span></label>
+            <input
+              type="text"
+              class="form-control email_input"
+              id="formGroupExampleInput"
+              placeholder="Email"
+              formControlName="email"
+            />
+          </div>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="contact-input">
+            <label for="">Contact No.<span>*</span></label>
+            <input
+              type="text"
+              class="form-control contact_input"
+              id="formGroupExampleInput"
+              placeholder="Contact no"
+              formControlName="contactno"
+            />
+          </div>
+          <div class="contact-input">
+            <label for="">Facebook Url<span>*</span></label>
+            <input
+              type="text"
+              class="form-control fb_input"
+              id="formGroupExampleInput"
+              placeholder="Facebookurl"
+              formControlName="facebookurl"
+            />
+          </div>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="item-input">
+            <label for="">Item<span>*</span></label>
+            <input
+              type="text"
+              class="form-control item_input"
+              id="formGroupExampleInput"
+              placeholder="Item1"
+              formControlName="item"
+            />
+          </div>
+          <div class="item-input">
+            <label for="">Qty<span>*</span></label>
+            <input
+              type="text"
+              class="form-control qty_input"
+              id="formGroupExampleInput"
+              placeholder="Qty"
+              formControlName="facebookurl"
+            />
+          </div>
+          <div class="item-input">
+            <input type="button" value="+" class="btn_input" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="">Location<span>*</span></label>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="formGroupExampleInput"
+            placeholder="ex:- Delhi"
+            formControlName="select_input"
+          />
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+          ></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+        <div class="mt-3">
+          <input
+            type="Submit"
+            class="form-control bg-primary text-white"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+      </div>
+    </form>
+    <div class="icon-btn">
+      <button
+        type="button"
+        class="btn btn-outline-success float-end d-flex flex-end"
+      >
+        <i class="fa-brands fa-whatsapp"><span>Join Us</span></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <form action="" class="mb-5 d-flex flex-wrap">
+      <div class="col-md-8 left_section">
+        <p class="text-danger fw-normal text-end">( * ) show required field</p>
+        <div class="mb-3 d-flex flex-wrap">
+          <label for="">Type of donation<span>*</span></label>
+          <select class="form-select" aria-label="Default select example">
+            <option>Select how you would like to donate?</option>
+            <option value="1" type="money" selected>Money</option>
+            <option value="2" type="clothes">Clothes</option>
+            <option value="3" type="Foods">Foods</option>
+            <option value="3" type="Books">Books/Toys</option>
+          </select>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="contact-input">
+            <label for="">Fullname<span>*</span></label>
+            <input
+              type="text"
+              class="form-control fullname_input"
+              id="formGroupExampleInput"
+              placeholder="Fullname"
+              formControlName="fullname"
+            />
+          </div>
+          <div class="contact-input">
+            <label for="">Email<span>*</span></label>
+            <input
+              type="text"
+              class="form-control email_input"
+              id="formGroupExampleInput"
+              placeholder="Email"
+              formControlName="email"
+            />
+          </div>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="contact-input">
+            <label for="">Contact No.<span>*</span></label>
+            <input
+              type="text"
+              class="form-control contact_input"
+              id="formGroupExampleInput"
+              placeholder="Contact no"
+              formControlName="contactno"
+            />
+          </div>
+          <div class="contact-input">
+            <label for="">Facebook Url<span>*</span></label>
+            <input
+              type="text"
+              class="form-control fb_input"
+              id="formGroupExampleInput"
+              placeholder="Facebookurl"
+              formControlName="facebookurl"
+            />
+          </div>
+        </div>
+        <div class="mb-3 d-flex flex-wrap mb-4">
+          <div class="item-input">
+            <label for="">Item<span>*</span></label>
+            <input
+              type="text"
+              class="form-control item_input"
+              id="formGroupExampleInput"
+              placeholder="Item1"
+              formControlName="item"
+            />
+          </div>
+          <div class="item-input">
+            <label for="">Qty<span>*</span></label>
+            <input
+              type="text"
+              class="form-control qty_input"
+              id="formGroupExampleInput"
+              placeholder="Qty"
+              formControlName="facebookurl"
+            />
+          </div>
+          <div class="item-input">
+            <input type="button" value="+" class="btn_input" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="">Location<span>*</span></label>
+          <input
+            type="text"
+            class="form-control mb-4"
+            id="formGroupExampleInput"
+            placeholder="ex:- Delhi"
+            formControlName="select_input"
+          />
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+          ></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+        <div class="mt-3">
+          <input
+            type="Submit"
+            class="form-control bg-primary text-white"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+      </div>
+    </form>
+    <div class="icon-btn">
+      <button
+        type="button"
+        class="btn btn-outline-success float-end d-flex flex-end"
+      >
+        <i class="fa-brands fa-whatsapp"><span>Join Us</span></i>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.container {
+  width: 80%;
+  padding: 45px;
+  border-radius: 0;
+}
+.container h4 {
+  font-size: 40px;
+}
+.box {
+  box-shadow: 2px 8px 8px 8px rgb(197, 196, 196);
+}
+.contact-info {
+  margin-top: -50px;
+}
+.contact-info p {
+  font-size: 18px;
+}
+.contact-info i {
+  color: blue;
+}
+.icon-btn {
+  margin-right: -90px;
+}
+button {
+  margin-top: -50px;
+  background-color: rgb(169, 166, 166);
+  border: none;
+  width: 110px;
+  height: 40px;
+  color: white;
+}
+button i {
+  margin-top: -3px;
+  color: green;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 5px;
+  margin-right: -200px;
+}
+button i span {
+  margin-top: -50px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+}

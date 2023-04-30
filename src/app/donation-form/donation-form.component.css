@@ -1,0 +1,76 @@
+.left_section {
+  box-shadow: 2px 8px 8px 8px rgb(197, 196, 196);
+  padding: 20px 30px;
+}
+.left_section span {
+  color: red;
+  padding-left: 4px;
+}
+.container {
+  margin-top: 40px;
+  width: 80%;
+}
+.payment_section {
+  margin-top: 75px;
+  margin-left: 50px;
+  height: 350px;
+  width: 250px;
+  box-shadow: 3px 5px 5px 5px rgb(197, 196, 196);
+}
+.acc_details {
+}
+.acc_details p {
+  font-size: 14px;
+  padding: 0px 10px;
+}
+.acc_details p span {
+  padding-left: 70px;
+  align-items: end;
+  justify-content: space-between;
+}
+button {
+  margin-top: -50px;
+  background-color: rgb(169, 166, 166);
+  border: none;
+  width: 110px;
+  height: 40px;
+  color: white;
+}
+button i {
+  margin-top: -3px;
+  color: green;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 5px;
+  margin-right: -200px;
+}
+button i span {
+  margin-top: -50px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+}
+.contact-input .fullname_input,
+.email_input,
+.contact_input,
+.fb_input {
+  width: 320px;
+}
+.fullname_input,
+.contact_input {
+  margin-right: 37px;
+}
+.item-input .item_input,
+.qty_input {
+  width: 270px;
+}
+.item-input .btn_input {
+  margin-top: 26px;
+  width: 60px;
+  padding: 5px 0px;
+}
+.item_input,
+.qty_input {
+  margin-right: 37px;
+}
